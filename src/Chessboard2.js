@@ -63,7 +63,7 @@ const Chessboard = ({ rotation }) => {
     };
   }, [rotation]);
 
-  return <div ref={mountRef} style={{ width: '100%', height: '100%' }} />;
+  return <div ref={mountRef} style={{ width: '200%', height: '200%' }} />;
 };
 
 export default Chessboard;
