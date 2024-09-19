@@ -1,0 +1,43 @@
+/* Game.css */
+.game {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 60px); /* Standard size squares */
+    grid-gap: 5px;
+    margin: 20px auto;
+  }
+  
+  .square {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+  }
+  
+  .white {
+    background-color: #f9f9f9;
+  }
+  
+  .black {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .key-square {
+    background-color: #ffcc00; /* Yellow for the key square */
+  }
+  
+  .square:hover {
+    background-color: #007bff; /* Highlight the square on hover */
+    color: #ffffff;
+  }
+  

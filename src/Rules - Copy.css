@@ -1,0 +1,54 @@
+/* Rules.css */
+.rules-container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.rules-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.rules-container ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.rules-container li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .rules-container {
+        padding: 15px;
+    }
+    
+    .rules-container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .rules-container li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .rules-container {
+        padding: 10px;
+    }
+    
+    .rules-container h2 {
+        font-size: 1.5rem;
+    }
+    
+    .rules-container li {
+        font-size: 0.9rem;
+    }
+}
