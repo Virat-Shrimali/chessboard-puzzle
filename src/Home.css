@@ -40,17 +40,15 @@
 
 /* Chessboard container styling */
 .chessboard-container {
-  perspective: 1000px;
+  perspective: 10px;
   margin-bottom: 40px;
-  width: 400px;
-  height: 400px;
-}
-
-.chessboard {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.1s ease-out;
+  width: 40vw; /* Responsive width */
+  height: 40vh; /* Responsive height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Ensure no background color */
+  box-shadow: none; /* Translucent shadow for the container */
 }
 
 /* Button styling */
