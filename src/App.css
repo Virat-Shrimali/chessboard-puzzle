@@ -4,22 +4,24 @@ body {
   color: #ffffff;
   margin: 0;
   padding: 0;
+  background-image: url(/src/bgimage.jpg) no-repeat center center fixed;
 }
 
 .App {
   position: relative; /* Ensure the App container takes up the full space */
   width: 100vw;
   height: 100vh;
-  /* overflow: no; Prevent scrolling */
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .navbar {
-  background-color: #333; /* Solid color for the navbar */
+  background-color: transparent; /* Fully transparent background */
+  backdrop-filter: blur(10px); /* Optional: adds a blur effect to the background */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 15px 0; */
+  padding: 15px 0;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* White glow effect */
 }
 
 .navbar ul {
@@ -35,9 +37,10 @@ body {
 .navbar li a {
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, text-shadow 0.3s; /* Added transition for text-shadow */
 }
 
 .navbar li a:hover {
   color: #cccccc;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* White glow effect on hover */
 }

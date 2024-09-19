@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Chessboard2 from './Chessboard2';
+import { useNavigate, Link } from 'react-router-dom'; // Import Link here
 import './Home.css';
 
 function Home() {
@@ -29,24 +28,38 @@ function Home() {
 
   return (
     <div className="home-container">
-      <h1 className="home-title">Impossible Chessboard Puzzle</h1>
-      <p className="home-description">
-        Welcome to the Almost Impossible Chessboard Puzzle! You are tasked with finding the hidden key on an 8x8 chessboard after a single coin flip.
-      </p>
-      {/* <div
-        className="chessboard-container"
-        onMouseDown={handleStartInteraction}
-        onMouseMove={handleMove}
-        onMouseUp={handleEndInteraction}
-        onTouchStart={handleStartInteraction}
-        onTouchMove={handleMove}
-        onTouchEnd={handleEndInteraction}
-      >
-        <Chessboard2 rotation={rotation} /> {/* Pass rotation props 
-      </div> */}
-      <button className="start-btn" onClick={() => navigate('/game')}>
-        Start Game
-      </button>
+      <div className="nav">
+        <nav className="navbar">
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/rules">Rules</Link></li>
+            <li><Link to="/game">Play Game</Link></li>
+          </ul>
+        </nav>
+      </div>
+      <div className="desc">
+        <h1 className="home-title">Impossible Chessboard Puzzle</h1>
+        <p className="home-description">
+          Welcome to the Almost Impossible Chessboard Puzzle! You are tasked with finding the hidden key on an 8x8 chessboard after a single coin flip.
+        </p>
+        {/* Uncomment and update the chessboard container as needed */}
+        {/* 
+        <div
+          className="chessboard-container"
+          onMouseDown={handleStartInteraction}
+          onMouseMove={handleMove}
+          onMouseUp={handleEndInteraction}
+          onTouchStart={handleStartInteraction}
+          onTouchMove={handleMove}
+          onTouchEnd={handleEndInteraction}
+        >
+          <Chessboard2 rotation={rotation} />
+        </div>
+        */}
+        <button className="start-btn" onClick={() => navigate('/game')}>
+          Start Game
+        </button>
+      </div>
     </div>
   );
 }

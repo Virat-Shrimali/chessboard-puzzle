@@ -1,13 +1,12 @@
 /* Game.css */
 .game {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 0;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center; /* Center vertically */
   height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Prevent scrollbars */
+  overflow-x: hidden; /* Prevent scrollbars */
 }
 
 .chessboard {
@@ -92,6 +91,7 @@
     height: 70vmin; /* Adjust height for portrait orientation */
   }
 }
+
 .restart-button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -101,8 +101,55 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  margin-bottom: 20px; /* Adjusted for better spacing */
 }
 
 .restart-button:hover {
   background-color: #0056b3;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin-bottom: 10vh;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Optional: adds a blur effect to the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* White glow effect */
+}
+
+/* Navbar list styling */
+.navbar ul {
+  list-style: none;
+  display: flex; /* Keeps items horizontal */
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar item styling */
+.navbar li {
+  font-size: 18px;
+}
+
+/* Navbar link styling */
+.navbar li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s; /* Added transition for text-shadow */
+}
+
+/* Navbar link hover effect */
+.navbar li a:hover {
+  color: #cccccc;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* White glow effect on hover */
 }

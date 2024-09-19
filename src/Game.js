@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate, Link } from 'react-router-dom'; // Import Link here
+
 import './Game.css';
 
 function Game() {
@@ -77,6 +79,15 @@ function Game() {
 
   return (
     <div className="game">
+      <div className="nav">
+        <nav className="navbar">
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/rules">Rules</Link></li>
+            <li><Link to="/game">Play Game</Link></li>
+          </ul>
+        </nav>
+      </div>
       <h2>Almost Impossible Chessboard Puzzle</h2>
       {message && <p>{message}</p>}
       {gameStage === 1 && <p>Player 1 (Fox): Flip a coin to signal the key's location</p>}

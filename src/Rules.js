@@ -1,10 +1,24 @@
 // Rules.js
 import React from 'react';
+import { useNavigate, Link } from 'react-router-dom'; // Import Link here
 import './Rules.css'; // Assuming separate CSS for rules page styling
 
 function Rules() {
   return (
+
+    <div className='outercon'>
+      <div className="nav">
+        <nav className="navbar">
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/rules">Rules</Link></li>
+            <li><Link to="/game">Play Game</Link></li>
+          </ul>
+        </nav>
+      </div>
+      
     <div className="rules-container">
+      
       <h2>Rules of the Almost Impossible Chessboard Puzzle</h2>
       <ul>
         <li>
@@ -32,6 +46,7 @@ function Rules() {
           The warden knows the prisoners' strategy in advance.
         </li>
       </ul>
+    </div>
     </div>
   );
 }
