@@ -1,46 +1,86 @@
 /* Game.css */
 .game {
-    text-align: center;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 columns */
+  grid-template-rows: repeat(8, 1fr); /* 8 rows */
+  width: 80vmin; /* Adjust width to fit viewport */
+  height: 80vmin; /* Adjust height to fit viewport */
+  background-color: #a55d30; /* Vintage brown background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw; /* Font size relative to viewport width */
+  cursor: pointer;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Ensure borders don't affect size */
+}
+
+.white {
+  background-color: #f9f9f9;
+}
+
+.black {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.key-square {
+  background-color: #ffcc00; /* Yellow for the key square */
+}
+
+.square:hover {
+  background-color: #007bff; /* Highlight the square on hover */
+  color: #ffffff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
   .chessboard {
-    display: grid;
-    grid-template-columns: repeat(8, 60px); /* Standard size squares */
-    grid-gap: 5px;
-    margin: 20px auto;
+    width: 70vmin;
+    height: 70vmin;
   }
-  
+}
+
+@media (max-width: 900px) {
+  .chessboard {
+    width: 60vmin;
+    height: 60vmin;
+  }
+}
+
+@media (max-width: 600px) {
+  .chessboard {
+    width: 50vmin;
+    height: 50vmin;
+  }
+
   .square {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    cursor: pointer;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
+    font-size: 1.5vw; /* Adjust font size */
   }
-  
-  .white {
-    background-color: #f9f9f9;
+}
+
+@media (max-width: 400px) {
+  .chessboard {
+    width: 40vmin;
+    height: 40vmin;
   }
-  
-  .black {
-    background-color: #333333;
-    color: #ffffff;
+
+  .square {
+    font-size: 1.2vw; /* Further reduce font size */
   }
-  
-  .key-square {
-    background-color: #ffcc00; /* Yellow for the key square */
-  }
-  
-  .square:hover {
-    background-color: #007bff; /* Highlight the square on hover */
-    color: #ffffff;
-  }
-  
+}

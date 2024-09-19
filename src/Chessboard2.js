@@ -1,4 +1,3 @@
-// src/Chessboard.js
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
@@ -11,6 +10,7 @@ const Chessboard = ({ rotation }) => {
     const renderer = new THREE.WebGLRenderer({ alpha: true }); // Enable transparent background
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(window.devicePixelRatio); // Adjust for high DPI screens
+    renderer.setClearColor(0x000000, 0); // Set the background to transparent
     mountRef.current.appendChild(renderer.domElement);
 
     // Create the chessboard

@@ -1,10 +1,16 @@
-/* App.css */
 body {
   font-family: Arial, sans-serif;
   background-color: #1e1e2e; /* Jellyfish color theme similar to VS Code */
   color: #ffffff;
   margin: 0;
   padding: 0;
+}
+
+.App {
+  position: relative; /* Ensure the App container takes up the full space */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
 }
 
 .navbar {
