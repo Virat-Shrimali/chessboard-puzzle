@@ -4,13 +4,15 @@ body {
   color: #ffffff;
   margin: 0;
   padding: 0;
-  background-image: url(/src/bgimage.jpg) no-repeat center center fixed;
+  /* background-image: url(/src/bgimage.jpg) no-repeat center center fixed; */
 }
 
 .App {
   position: relative; /* Ensure the App container takes up the full space */
   width: 100vw;
   height: 100vh;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 

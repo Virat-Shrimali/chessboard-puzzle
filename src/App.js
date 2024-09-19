@@ -21,7 +21,7 @@ function App() {
             <li><Link to="/game">Play Game</Link></li>
           </ul>
         </nav> */}
-=
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rules" element={<Rules />} />
