@@ -5,6 +5,10 @@ import Rules from './Rules';
 import Game from './Game';
 import './App.css';
 import { inject } from '@vercel/analytics';
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
+
 inject();
 function App() {
   return (
