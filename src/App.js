@@ -4,8 +4,7 @@ import Home from './Home';
 import Rules from './Rules';
 import Game from './Game';
 import './App.css';
-import { Analytics } from "@vercel/analytics/react"
-
+import { inject } from "@vercel/analytics"
 function App() {
   return (
     <Router>
