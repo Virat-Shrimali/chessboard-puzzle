@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom'; // Import Link here
-
+import { Analytics } from "@vercel/analytics/react"
 import './Game.css';
 
 function Game() {

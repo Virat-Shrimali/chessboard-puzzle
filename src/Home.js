@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom'; // Import Link here
 import './Home.css';
-
+import { Analytics } from "@vercel/analytics/react"
 function Home() {
   const navigate = useNavigate();
   const [rotation, setRotation] = useState({ x: 0, y: 0 });

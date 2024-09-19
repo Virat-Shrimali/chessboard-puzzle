@@ -2,6 +2,7 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom'; // Import Link here
 import './Rules.css'; // Assuming separate CSS for rules page styling
+import { Analytics } from "@vercel/analytics/react"
 
 function Rules() {
   return (
