@@ -5,6 +5,7 @@ import Rules from './Rules';
 import Game from './Game';
 import './App.css';
 import { inject } from '@vercel/analytics';
+inject();
 function App() {
   return (
     <Router>
@@ -16,8 +17,7 @@ function App() {
             <li><Link to="/game">Play Game</Link></li>
           </ul>
         </nav> */}
-        <Analytics />
-
+=
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rules" element={<Rules />} />
