@@ -1,6 +1,9 @@
+// src/Home.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Chessboard from './Chessboard';
 import './Home.css';
+import Chessboard2 from './Chessboard2';
 
 function Home() {
   const navigate = useNavigate();
@@ -21,14 +24,7 @@ function Home() {
         Welcome to the Almost Impossible Chessboard Puzzle! You are tasked with finding the hidden key on an 8x8 chessboard after a single coin flip.
       </p>
       <div className="chessboard-container" onMouseMove={handleMouseMove}>
-        <img
-          src=""
-          alt="3D Chessboard"
-          className="chessboard"
-          style={{
-            transform: `rotateX(${rotation.y}deg) rotateY(${rotation.x}deg)`,
-          }}
-        />
+        <Chessboard2 rotation={rotation} /> {/* Pass rotation props */}
       </div>
       <button className="start-btn" onClick={() => navigate('/game')}>
         Start Game

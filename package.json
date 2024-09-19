@@ -1,6 +1,5 @@
 {
   "homepage": "https://virat-shrimali.github.io/",
-
   "name": "chessboard-puzzle",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +11,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
     "react-scripts": "^5.0.1",
+    "three": "^0.168.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -21,9 +21,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-},
-
-  
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
