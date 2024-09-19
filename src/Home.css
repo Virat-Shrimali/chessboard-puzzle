@@ -40,7 +40,7 @@
 
 /* Chessboard container styling */
 .chessboard-container {
-  perspective: 1000px;
+  perspective: 50px;
   margin-bottom: 40px;
   width: 40vw; /* Responsive width */
   height: 40vh; /* Responsive height */
