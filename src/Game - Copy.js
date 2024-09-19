@@ -45,12 +45,17 @@ function Game() {
       // Compare with initial key location and provide feedback
       const isCorrect = index === keyLocation;
       if (isCorrect) {
-        alert(`Ell guessed correctly! The key was under square ${keyLocation + 1}.`);
+        setMessage(`Ell guessed correctly! The key was under square ${keyLocation + 1}.`);
+        // Wait for a brief moment before resetting the game
+        setTimeout(() => {
+          resetGame();
+        }, 2000); // 2000 milliseconds delay to show the message
       } else {
-        alert(`Ell's guess was incorrect. The key was under square ${keyLocation + 1}.`);
+        setMessage(`Ell's guess was incorrect. The key was under square ${keyLocation + 1}. Try again.`);
+        // Allow another guess
+        setFlipped(false);  // Reset flipped state to allow Player 1 to flip again
+        // Optionally, you could reset the coins or provide a visual cue here
       }
-      // Reset the game for a new round
-      resetGame();
     }
   };
 
@@ -61,6 +66,7 @@ function Game() {
     setFlipped(false);
     setGameStage(1);
     setEllGuess(null);
+    setMessage(''); // Clear message after reset
   };
 
   return (
