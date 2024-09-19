@@ -43,7 +43,7 @@
   perspective: 50px;
   margin-bottom: 40px;
   width: 40vw; /* Responsive width */
-  height: 40vh; /* Responsive height */
+  height: 0vh; /* Responsive height */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,6 +55,7 @@
 .start-btn {
   background-color: #007bff;
   color: white;
+  margin-top: 10px;
   border: none;
   padding: 12px 24px;
   font-size: 1.2rem;

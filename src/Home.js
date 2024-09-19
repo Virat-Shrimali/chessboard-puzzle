@@ -33,7 +33,7 @@ function Home() {
       <p className="home-description">
         Welcome to the Almost Impossible Chessboard Puzzle! You are tasked with finding the hidden key on an 8x8 chessboard after a single coin flip.
       </p>
-      <div
+      {/* <div
         className="chessboard-container"
         onMouseDown={handleStartInteraction}
         onMouseMove={handleMove}
@@ -42,8 +42,8 @@ function Home() {
         onTouchMove={handleMove}
         onTouchEnd={handleEndInteraction}
       >
-        <Chessboard2 rotation={rotation} /> {/* Pass rotation props */}
-      </div>
+        <Chessboard2 rotation={rotation} /> {/* Pass rotation props 
+      </div> */}
       <button className="start-btn" onClick={() => navigate('/game')}>
         Start Game
       </button>
