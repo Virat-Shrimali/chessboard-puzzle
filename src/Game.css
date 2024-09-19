@@ -1,7 +1,7 @@
 /* Game.css */
 .game {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -82,5 +82,13 @@
 
   .square {
     font-size: 1.2vw; /* Further reduce font size */
+  }
+}
+
+/* Additional media queries for portrait orientation */
+@media (orientation: portrait) {
+  .chessboard {
+    width: 70vmin; /* Adjust width for portrait orientation */
+    height: 70vmin; /* Adjust height for portrait orientation */
   }
 }
