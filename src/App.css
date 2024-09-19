@@ -10,7 +10,8 @@ body {
   position: relative; /* Ensure the App container takes up the full space */
   width: 100vw;
   height: 100vh;
-  overflow: hidden; /* Prevent scrolling */
+  /* overflow: no; Prevent scrolling */
+  overflow-x: hidden;
 }
 
 .navbar {
