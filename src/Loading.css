@@ -1,6 +1,7 @@
-/* Loading.css */
+/* Importing the Orbitron font */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
+/* Container styling with gradient animation */
 .loading-container {
   display: flex;
   flex-direction: column;
@@ -12,12 +13,14 @@
   animation: gradientAnimation 6s ease infinite;
 }
 
+/* Gradient background animation */
 @keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
+/* Spinner with dark blue color and glow */
 .spinner {
   width: 60px;
   height: 60px;
@@ -28,15 +31,13 @@
   box-shadow: 0 0 20px rgba(0, 31, 63, 1), 0 0 40px rgba(0, 31, 63, 0.7);
 }
 
+/* Spinner rotation animation */
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
+/* Loading text with futuristic font and glowing effect */
 .loading-container p {
   margin-top: 15px;
   font-size: 20px;
@@ -44,4 +45,29 @@
   font-family: 'Orbitron', sans-serif; /* Applying the futuristic font */
   letter-spacing: 2px;
   text-shadow: 0 0 10px rgba(0, 204, 255, 0.7), 0 0 20px rgba(0, 204, 255, 0.5);
+}
+
+/* Progress bar container styling */
+.progress-bar-container {
+  width: 40%; /* Adjust as needed */
+  height: 20px;
+  background-color: #004e92;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px; /* Space between spinner and progress bar */
+}
+
+/* Progress bar itself */
+.progress-bar {
+  height: 100%;
+  width: 0; /* Initial width (change with animation) */
+  background-color: #00ccff;
+  animation: loadingProgress 5s linear infinite; /* Progress bar animation */
+}
+
+/* Progress bar animation */
+@keyframes loadingProgress {
+  0% { width: 0%; }
+  50% { width: 50%; }
+  100% { width: 100%; }
 }
