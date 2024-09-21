@@ -1,0 +1,48 @@
+/* Loading.css */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000428, #004e92); /* Darker futuristic blue gradient */
+    background-size: 200% 200%;
+    animation: gradientAnimation 6s ease infinite; /* Smooth gradient animation */
+  }
+  
+  /* Gradient background animation */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(255, 255, 255, 0.1); /* Lighter translucent border */
+    border-left-color: #001f3f; /* Dark blue spinner color */
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite; /* Continuous spinning */
+    box-shadow: 0 0 20px rgba(0, 31, 63, 1), 0 0 40px rgba(0, 31, 63, 0.7); /* Strong dark blue futuristic glow */
+  }
+  
+  /* Spinner rotation animation */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-container p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #00ccff; /* Futuristic cyan text color */
+    font-family: 'Orbitron', sans-serif; /* A more futuristic font */
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.7), 0 0 20px rgba(0, 204, 255, 0.5); /* Cyan glowing text */
+  }
+  
