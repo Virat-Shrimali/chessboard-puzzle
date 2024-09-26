@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom'; // Import Link here
-import './Home.css';
-import { Analytics } from "@vercel/analytics/react"
+import { useNavigate, Link } from 'react-router-dom';
+import './Home.css'; // Make sure this CSS file includes styles for the video background
+import { Analytics } from "@vercel/analytics/react";
 
 function Home() {
   const navigate = useNavigate();
@@ -29,6 +29,10 @@ function Home() {
 
   return (
     <div className="home-container">
+      <video autoPlay muted loop id="background-video">
+        <source src="/src/bgvideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="nav">
         <nav className="navbar">
           <ul>
@@ -61,6 +65,7 @@ function Home() {
           Start Game
         </button>
       </div>
+      <Analytics />
     </div>
   );
 }
