@@ -1,58 +1,82 @@
-/* Home.css */
-
 /* General container styling */
+.body {
+  margin: 0;
+  padding: 0;
+}
+
 .home-container {
-  position: relative; /* Position relative to handle the video background */
+  text-align: center;
+  color: white;
+  background: url('/src/bgimage.jpg') no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the whole background */
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: relative;
   /* justify-content: center; */
-  overflow: hidden; /*Prevents scroll bars from appearing*/
-  color: white; /* Text color */
-  text-align: center;
+  align-items: center;
+  padding: 0px;
+  overflow: hidden; /* Prevents scroll bars from appearing due to the image */
 }
 
-/* Video background styling */
-#background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire container */
-  /* z-index: -2; Place behind the content */
-}
-
-/* Glass effect overlay */
-.home-container-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
-  backdrop-filter: blur(10px); /* Glass effect */
-  z-index: -1; /* Place behind the content */
-}
-
-/* Title styling */
+/* Title styling with white color and greyish glow */
 .home-title {
+  font-family: 'Roboto', sans-serif; /* Modern, clean font */
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 20px;
   margin-top: 10vh;
   color: white; /* White text color */
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(200, 200, 200, 0.6); /* Greyish glow effect */
+  transition: text-shadow 1s ease, transform 1s ease;
+  animation: titleAnimation 2s ease-out forwards, glowEffect 2s infinite alternate;
 }
 
 /* Description styling */
 .home-description {
   font-weight: bolder;
   font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Button styling */
+/* Title animation */
+@keyframes titleAnimation {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Greyish glow effect for title */
+@keyframes glowEffect {
+  0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(200, 200, 200, 0.6); }
+  100% { text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(200, 200, 200, 0.8); }
+}
+
+/* Pulse effect for button animation */
+@keyframes pulseEffect {
+  0% { transform: scale(1); box-shadow: 0 0 10px #007bff, 0 0 20px #007bff; }
+  50% { transform: scale(1.05); box-shadow: 0 0 20px #007bff, 0 0 30px #007bff; }
+  100% { transform: scale(1); box-shadow: 0 0 10px #007bff, 0 0 20px #007bff; }
+}
+
+/* Button styling with smooth transitions */
+/* Keyframes for the initial animation */
+/* Keyframes for the initial animation */
+@keyframes buttonInitialAnimation {
+  0% {
+    transform: scale(0.8); /* Start with a smaller scale */
+    opacity: 0; /* Start as invisible */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly larger scale for emphasis */
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    transform: scale(1); /* Return to normal scale */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Button styling with smooth transitions */
 .start-btn {
   background-color: #007bff;
   color: white;
@@ -60,15 +84,34 @@
   border: none;
   padding: 12px 24px;
   font-size: 1.2rem;
-  border-radius: 10px;
+  margin-top: 5vh;
   cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: pulseEffect 2s infinite, buttonInitialAnimation 1s ease-out; /* Combine pulse and initial animation */
 }
 
 .start-btn:hover {
   background-color: #0056b3;
+  transform: scale(1.05); /* Slight scaling on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+
+.start-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight scaling on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.start-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight scaling on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
 /* Navbar styling */
+/* Container for navbar */
 .nav {
   position: sticky;
   top: 0;
@@ -76,13 +119,18 @@
   z-index: 1000; /* Ensure it stays above other content */
 }
 
+/* Navbar styling */
 .navbar {
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Optional: adds a blur effect to the background */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px 0;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* White glow effect */
 }
 
+/* Navbar list styling */
 .navbar ul {
   list-style: none;
   display: flex; /* Keeps items horizontal */
@@ -91,7 +139,22 @@
   padding: 0;
 }
 
+/* Navbar item styling */
+.navbar li {
+  font-size: 18px;
+}
+
+/* Navbar link styling */
 .navbar li a {
   color: #ffffff;
   text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s; /* Added transition for text-shadow */
 }
+
+/* Navbar link hover effect */
+.navbar li a:hover {
+  color: #cccccc;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* White glow effect on hover */
+}
+
+/* No media query needed for horizontal layout */
