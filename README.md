@@ -1,22 +1,22 @@
 # 🚀 The Almost Impossible Chessboard Puzzle 🎮
 
-## Thrilled to Announce My Latest Project\!
+## Thrilled to Announce My Latest Project!
 
 I’m excited to share that I’ve just completed my personal web development project:  
-**"The Almost Impossible Chessboard Puzzle"**!  
+**"The Almost Impossible Chessboard Puzzle"**!
 
 This project was originally part of the **MACT (Mathematical Algorithmic and Computational Thinking)** course in my first semester of **B.Tech in Mathematics and Computing** at **Dhirubhai Ambani Institute of Information and Communication Technology (DA-IICT)**, under the guidance of **Prof. Sunitha Vadivel Murugan**.  
-Along with my talented teammates, **Khanak Patel** and **Megh Jagtap**, we researched extensively through sites, videos, and research papers to develop this intriguing puzzle.  
+Along with my talented teammates, **Khanak Patel** and **Megh Jagtap**, we researched extensively through sites, videos, and research papers to develop this intriguing puzzle.
 
 As a personal challenge, I took the concept further and built a full-fledged website for the puzzle, now part of my personal portfolio!
 
 ## 🔧 Tech Stack
 
-- HTML  
-- CSS  
-- JavaScript  
-- ReactJS  
-- Node.js  
+- ![HTML](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=fff&style=flat-square)  
+- ![CSS](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=fff&style=flat-square)  
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)  
+- ![React](https://img.shields.io/badge/-ReactJS-61DAFB?logo=react&logoColor=fff&style=flat-square)  
+- ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=fff&style=flat-square)  
 
 ## 📝 Rules of the Game
 
@@ -29,7 +29,7 @@ As a personal challenge, I took the concept further and built a full-fledged web
 ## 🔗 Links
 
 - [Play the Game](https://chessboard-puzzle.vercel.app/)  
-- [GitHub Repo](https://lnkd.in/dD5Q68Wm)  
+- [GitHub Repo](https://lnkd.in/dD5Q68Wm)
 
 ## 🙌 Acknowledgments
 
@@ -39,6 +39,4 @@ Special thanks to my professor **Sunitha Vadivel Murugan** for her invaluable co
 
 I’m proud of the outcome and would love for you to try out the game!  
 Feel free to share your feedback and ideas to make it even better.
-
-
 
