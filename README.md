@@ -1,74 +1,27 @@
-<<<<<<< HEAD
-# chessboard-puzzle
-=======
-# Getting Started with Create React App
+🚀 The Almost Impossible Chessboard Puzzle 🎮
+Thrilled to Announce My Latest Project!
+I’m excited to share that I’ve just completed my personal web development project: "The Almost Impossible Chessboard Puzzle"!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was originally part of the MACT (Mathematical Algorithmic and Computational Thinking) course in my first semester of B.Tech in Mathematics and Computing at Dhirubhai Ambani Institute of Information and Communication Technology (DA-IICT), under the guidance of Prof. Sunitha Vadivel Murugan. Along with my talented teammates, Khanak Patel and Megh Jagtap, we researched extensively through sites, videos, and research papers to develop this intriguing puzzle. As a personal challenge, I took the concept further and built a full-fledged website for the puzzle, now part of my personal portfolio!
 
-## Available Scripts
+🔧 Tech Stack
+HTML
+CSS
+JavaScript
+ReactJS
+Node.js
+📝 Rules of the Game
+You are given an 8x8 chessboard with 64 coins, each coin showing either heads (H) or tails (T).
+A key is hidden under one of the coins. Its exact location is unknown to both prisoners at the start.
+Prisoner 1 (Fox) enters the room first and sees the location of the key as shown by the warden. Fox must flip exactly one coin to convey the key’s location to Prisoner 2 (Ell).
+Prisoner 2 (Ell) enters the room afterward and must deduce the key's location based solely on the current arrangement of the coins.
+Both prisoners can agree on a strategy beforehand but cannot communicate once the game begins. The warden knows the strategy.
+🔗 Links
+Play the Game
+GitHub Repo
+🙌 Acknowledgments
+Special thanks to my professor Sunitha Vadivel Murugan and my teammates Khanak Patel and Megh Jagtap for their invaluable contribution to the project.
 
-In the project directory, you can run:
+💬 Feedback
+I’m proud of the outcome and would love for you to try out the game! Feel free to share your feedback and ideas to make it even better.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> cf2c9c0 (Add new React project files)
