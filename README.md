@@ -33,7 +33,7 @@ As a personal challenge, I took the concept further and built a full-fledged web
 
 ## 🙌 Acknowledgments
 
-Special thanks to my professor **Sunitha Vadivel Murugan** and my teammates **Khanak Patel** and **Megh Jagtap** for their invaluable contribution to the project.
+Special thanks to my professor **Sunitha Vadivel Murugan** for her invaluable contribution to the project.
 
 ## 💬 Feedback
 
